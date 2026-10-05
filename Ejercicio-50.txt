@@ -1,0 +1,30 @@
+Algoritmo Burbuja_Mayor_a_Menor
+	Definir n, i, j, aux Como Entero
+	n = 5
+	Dimension arreglo[n]
+	
+	// 1. Leer los 5 números
+	Para i <- 0 Hasta n-1 Con Paso 1 Hacer
+		Escribir "Dame el número ", i+1, ":"
+		Leer arreglo[i]
+	FinPara
+	
+	// 2. Método de la Burbuja
+	// Conclusiones del video:
+	// Hacen falta dos bucles
+	// j va desde 0 hasta cantidad-1 y va reduciéndose en 1 en cada pasada
+	
+	Para i <- 0 Hasta n-2 Hacer
+		Para j <- 0 Hasta n-2-i Hacer
+			// Si queremos de MAYOR a MENOR usamos <
+			// Si lo quieres de MENOR a MAYOR cambia a >
+			Si arreglo[j] < arreglo[j+1] Entonces
+				aux = arreglo[j]
+				arreglo[j] = arreglo[j+1]
+				arreglo[j+1] = aux
+			FinSi
+		FinPara
+	FinPara
+	
+	// 3.
+//Código realizado en 'Pseudocode' App for Android

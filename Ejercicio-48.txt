@@ -1,0 +1,37 @@
+Algoritmo Ejercicio48
+
+    Definir notas, suma, mayor, menor, media Como Real
+    Definir i Como Entero
+    
+    Dimension notas[5]
+    
+    suma <- 0
+    
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "Dime una nota:"
+        Leer notas[i]
+        
+        suma <- suma + notas[i]
+        
+        Si i = 0 Entonces
+            mayor <- notas[i]
+            menor <- notas[i]
+        SiNo
+            Si notas[i] > mayor Entonces
+                mayor <- notas[i]
+            FinSi
+            
+            Si notas[i] < menor Entonces
+                menor <- notas[i]
+            FinSi
+        FinSi
+    FinPara
+    
+    media <- suma / 5
+    
+    Escribir "La media es: ", media
+    Escribir "La nota mayor es: ", mayor
+    Escribir "La nota menor es: ", menor
+
+FinAlgoritmo
+//Código realizado en 'Pseudocode' App for Android

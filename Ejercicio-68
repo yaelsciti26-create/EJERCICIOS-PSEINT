@@ -1,0 +1,31 @@
+
+	Funcion mayor <- MayorNumero(lista, cantidad)
+		Definir i, mayor Como Entero
+		
+		mayor <- lista[0]
+		
+		Para i <- 1 Hasta cantidad - 1 Hacer
+			Si lista[i] > mayor Entonces
+				mayor <- lista[i]
+			FinSi
+		FinPara
+FinFuncion
+
+
+Algoritmo Ejercicio68
+    Definir lista, i Como Entero
+    Dimension lista[5]
+    
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "Escribe el número ", i + 1, ":"
+        Leer lista[i]
+    FinPara
+    
+    Escribir "Los números son:"
+    
+    Para i <- 0 Hasta 4 Hacer
+        Escribir lista[i]
+    FinPara
+    
+    Escribir "El número mayor es: ", MayorNumero(lista, 5)
+FinAlgoritmo
